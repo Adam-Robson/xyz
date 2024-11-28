@@ -1,24 +1,78 @@
 .navigation-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    max-width: 999px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+
+.navlinks {
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navlink {
-    font-size: 1.4rem;
-    text-decoration: none;
-    letter-spacing: 0.3rem;
-    cursor: pointer;
-    color: var(--text);
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  animation: colorCycle 13s ease-in-out infinite;
+  transition: color 18s ease-in-out, filter 13s ease-in-out;
+  animation: smoothColorCycle 9s ease-in-out infinite, opacityCycle 8s ease-in-out infinite;
 }
 
 .navlink:hover {
     transform: scale(1.1);
-    transition: all 0.6s ease-in-out;
+    transition: all 2s ease-in-out;
     text-decoration: underline;
-    color: var(--primary);
 }
+
+@keyframes smoothColorCycle {
+    0% {
+      color: var(--accent);
+      filter: brightness(1);
+    }
+    25% {
+      color: var(--primary);
+      filter: brightness(1.1);
+    }
+    50% {
+      color: var(--accent);
+      filter: brightness(1.2);
+    }
+    75% {
+      color: var(--primary);
+      filter: brightness(1.1);
+    }
+    100% {
+      color: var(--accent);
+      filter: brightness(1);
+    }
+  }
+  
+  @keyframes opacityCycle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  
+  .navlinks a:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .navlinks a:nth-child(2) {
+    animation-delay: 13s;
+  }
+  .navlinks a:nth-child(3) {
+    animation-delay: 25s;
+  }
+  .navlinks a:nth-child(4) {
+    animation-delay: 33s;
+  }
+  

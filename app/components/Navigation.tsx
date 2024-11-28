@@ -44,7 +44,7 @@ export default function Navigation() {
   return (
     <>
         <div className="navigation-container">
-            <nav>
+            <nav className="navlinks">
                 {
                     pages.map(({id, title, url}) => (
                         <Link key={id} href={url} className="navlink">{title}</Link>

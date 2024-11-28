@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import { karla } from "@/fonts/fonts";
 import type { ITitle } from "@/types";
 
-import "@/styles/heading.css";
+import "./heading.css";
 
 export default function Heading({ title }: { title: ITitle }) {
   return (
