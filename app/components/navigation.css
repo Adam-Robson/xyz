@@ -20,14 +20,12 @@
   font-size: 0.9rem;
   text-decoration: none;
   cursor: pointer;
-  animation: colorCycle 13s ease-in-out infinite;
-  transition: color 18s ease-in-out, filter 13s ease-in-out;
-  animation: smoothColorCycle 9s ease-in-out infinite, opacityCycle 8s ease-in-out infinite;
+  animation: smoothColorCycle 5.4s ease-in-out infinite, opacityCycle 2.9s ease-in-out infinite;
 }
 
 .navlink:hover {
     transform: scale(1.1);
-    transition: all 2s ease-in-out;
+    transition: transform 2s ease-in-out;
     text-decoration: underline;
 }
 
@@ -55,24 +53,36 @@
   }
   
   @keyframes opacityCycle {
-    0%, 100% {
+    0% {
       opacity: 1;
     }
-    50% {
+    30% {
+      opacity: 0.9;
+    }
+    60% {
+      opacity: 0.7;
+    }
+    90% {
       opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
     }
   }
   
   .navlinks a:nth-child(1) {
-    animation-delay: 0s;
+    animation-delay: 1s;
   }
   .navlinks a:nth-child(2) {
-    animation-delay: 13s;
+    animation-delay: 3s;
   }
   .navlinks a:nth-child(3) {
-    animation-delay: 25s;
+    animation-delay: 5s;
   }
   .navlinks a:nth-child(4) {
-    animation-delay: 33s;
+    animation-delay: 7s;
+  }
+  .navlinks a:nth-child(5) {
+    animation-delay: 2s;
   }
   

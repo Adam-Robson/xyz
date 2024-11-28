@@ -4,39 +4,34 @@ import "./navigation.css";
 export const pages = [
   {
     id: 1,
-    title: "home",
-    url: "/",
-  },
-  {
-    id: 2,
-    title: "music",
-    url: "/music",
-  },
-  {
-    id: 3,
-    title: "writing",
-    url: "/writing",
-  },
-  {
-    id: 4,
-    title: "projects",
-    url: "/projects",
-  },
-  {
-    id: 5,
-    title: "photos",
-    url: "/photos",
-  },
-  {
-    id: 6,
     title: "about",
     url: "/about",
   },
   {
-    id: 7,
+    id: 2,
+    title: "photos",
+    url: "/photos",
+  },
+  {
+    id: 3,
+    title: "music",
+    url: "/music",
+  },
+  {
+    id: 4,
+    title: "writing",
+    url: "/writing",
+  },
+  {
+    id: 5,
+    title: "projects",
+    url: "/projects",
+  },
+  {
+    id: 6,
     title: "contact",
     url: "/contact",
-  },
+  }
 ];
 
 
