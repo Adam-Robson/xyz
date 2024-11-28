@@ -1,0 +1,24 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 999px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.1rem;
+}
+
+.navlink {
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.navlink:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    text-decoration: underline;
+    color: var(--primary);
+}

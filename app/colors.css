@@ -1,0 +1,39 @@
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --text: hsla(0, 4%, 91%, 1); /* #e9e7e7 */
+    --background: hsla(0, 0%, 16%, 1); /* #292929 */
+    --primary: hsla(193, 14%, 47%, 1); /* #678189 */
+    --secondary: hsla(7, 20%, 83%, 1); /* #dccdcb */
+    --accent: hsla(358, 24%, 52%, 1);  /* #a26769 */
+    --tertiary: hsla(212, 13%, 30%); /* #434c56 */
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --text: hsla(0, 0%, 16%, 1);
+    --background: hsla(0, 4%, 91%, 1);
+    --primary: hsla(193, 14%, 47%, 1); 
+    --secondary: hsla(7, 20%, 83%, 1);
+    --accent: hsla(358, 24%, 52%, 1);
+    --tertiary: hsla(212, 13%, 30%, 1);
+  }
+}
+
+body.dark {
+  --text: hsla(0, 4%, 91%, 1);
+  --background: hsla(0, 0%, 16%, 1);
+  --primary: hsla(193, 14%, 47%, 1);  
+  --secondary: hsla(7, 20%, 83%, 1);
+  --accent: hsla(358, 24%, 52%, 1);
+  --tertiary: hsla(212, 13%, 30%, 1);
+}
+
+body.light {
+  --text: hsla(0, 0%, 16%, 1);
+  --background: hsla(0, 4%, 91%, 1);
+  --primary: hsla(193, 14%, 47%, 1); 
+  --secondary: hsla(7, 20%, 83%, 1);
+  --accent: hsla(358, 24%, 52%, 1);
+  --tertiary: hsla(212, 13%, 30%, 1);
+}
