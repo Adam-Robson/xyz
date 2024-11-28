@@ -2,6 +2,7 @@
 
 import { PiMusicNote, PiX } from "react-icons/pi";
 import type { IToggleAudioPlayerProps } from "@/types";
+import "./audio-player.css";
 
 export default function ToggleAudioPlayer({ isVisible, setIsVisible }: IToggleAudioPlayerProps) {
 

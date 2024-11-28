@@ -38,40 +38,40 @@ export default function AudioControls() {
   };
 
   return (
-    <div className="min-h-32 w-full max-w-96 mx-auto flex flex-col justify-between items-center my-4">
-      <section className="w-full flex justify-between">
-        <button onClick={handlePreviousSong} className="control-btn">
-          <PiSkipBack size={32} />
-          <label className="control-label">Previous</label>
+    <div className="audio-controls-container">
+      <section className="audio-controls-top-half">
+        <button onClick={handlePreviousSong} className="audio-controls-button">
+          <PiSkipBack size={40} />
+          <label className="audio-controls-label">Previous</label>
         </button>
 
-        <button onClick={handlePlayPause} className="control-btn">
+        <button onClick={handlePlayPause} className="audio-controls-button">
           {playback ? (
-            <PiPause size={44}  />
+            <PiPause size={48}  />
           ) : (
-            <PiPlay size={44}  />
+            <PiPlay size={48}  />
           )}
-          <label className="control-label">{playback ? 'Pause' : 'Play'}</label>
+          <label className="audio-controls-label">{playback ? 'Pause' : 'Play'}</label>
         </button>
 
-        <button onClick={handleNextSong} className="control-btn">
-          <PiSkipForward size={32} />
-          <label className="control-label">Next</label>
+        <button onClick={handleNextSong} className="audio-controls-button">
+          <PiSkipForward size={40} />
+          <label className="audio-controls-label">Next</label>
         </button>
       </section>
 
-      <div className="w-full flex justify-between items-center">
+      <div className="audio-controls-bottom-half">
         <button
           id="mute"
           type="button"
           aria-label="Mute"
           onClick={handleMuteChange}
-          className="control-btn"
+          className="audio-controls-button"
         >
-          <PiSpeakerSlash size={28}  />
-          <label className="control-label">{mute ? 'Unmute' : 'Mute'}</label>
+          <PiSpeakerSlash size={32}  />
+          <label className="audio-controls-label">{mute ? 'Unmute' : 'Mute'}</label>
         </button>
-        <div className="relative w-full h-full flex justify-center items-center p-4">
+        <div className="audio-controls-volume">
           <input
             id="volume"
             ref={volumeSliderRef}
@@ -81,7 +81,6 @@ export default function AudioControls() {
             step="0.01"
             value={volume}
             onChange={volumeChangeHandler}
-            className="w-full"
           />
         </div>
       </div>
