@@ -1,9 +1,8 @@
 .home-page-container {
-  min-height: 100dvh;  
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -11,6 +10,7 @@
 
 .header {
   max-width: 1300px;
+  height: 100%;
   width: 100%;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -28,7 +28,7 @@
   padding: 0.5rem 1rem;
 }
 
-.home-main-content {
+.home-page-content {
   grid-row-start: 2;
   grid-row-end: 3;
   display: flex;
@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-.home-main-image {
+.home-page-image {
   position: absolute;
   top: 10rem;
   left: 50%;
@@ -46,7 +46,7 @@
   z-index: -2;
 }
 
-.footer {
+.home-page-footer {
   max-height: 7rem;
   width: 100%;
   grid-row-start: 3;

@@ -9,26 +9,21 @@ export const pages = [
   },
   {
     id: 2,
-    title: "photos",
-    url: "/photos",
-  },
-  {
-    id: 3,
     title: "music",
     url: "/music",
   },
   {
-    id: 4,
+    id: 3,
     title: "writing",
     url: "/writing",
   },
   {
-    id: 5,
+    id: 4,
     title: "projects",
     url: "/projects",
   },
   {
-    id: 6,
+    id: 5,
     title: "contact",
     url: "/contact",
   }

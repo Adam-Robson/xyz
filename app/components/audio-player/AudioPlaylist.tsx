@@ -8,7 +8,7 @@ import "./audio-controls.css";
 export default function AudioPlaylist() {
   const { currentIndex, handleSongChange } = useAudioContext() ?? {};
   return (
-    <div className="audio-playlist flex flex-col justify-start items-center">
+    <div className="audio-playlist flex flex-col justify-start items-center p-4">
       <ul className="list-none p-2">
         {playlist.map((track: ISong, index: number) => (
           <li

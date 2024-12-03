@@ -1,23 +1,21 @@
 import Image from "next/image";
-import AudioPlayer from "./components/audio-player/AudioPlayer";
-import Navigation from "./components/Navigation";
 import { AudioProvider } from "./contexts/AudioProvider";
+
+import AudioPlayer from "./components/audio-player/AudioPlayer";
+import Header from "./components/Header";
+
 import "./colors.css";
 import "./home.css";
 
-export default function Home() {
+function Home() {
   return (
     <div className="home-page-container">
-      <header className="header">
-        <div className="home-logo-container">
-          <Image src="/bow.webp" alt="le fog" width={200} height={200} className="max-w-32"/>
-        </div>
-        <Navigation />
-      </header>
-      <main className="home-main-content">
-        <Image src="/fishhed.webp" alt="le fog" width={500} height={500} className="home-main-image" />
+      <Header title="le fog" />
+      <main className="home-page-content">
+        <Image src="/fishhed.webp" alt="le fog" width={500} height={500} className="home-page-image" />
       </main>
-      <footer className="footer">
+
+      <footer className="home-page-footer">
         <AudioProvider>
           <AudioPlayer />
         </AudioProvider>
@@ -25,3 +23,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    min-height: 24rem;
     height: 100%;
-    max-width: 24rem;
+    max-width: 23rem;
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.85;
+    color: var(--aaa);
+
   }
   
   .audio-player-card {
@@ -16,25 +17,32 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    min-width: 20rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    min-width: 23rem;
     width: 100%;
     max-width: 22rem;
+    min-height: 18rem;
     margin: 0 auto;
     visibility: hidden;
     z-index: 10;
-    background-color: var(--secondary);
-    color: var(--background);
+    background-color: var(--accent);
+    color: var(--aaa);
     border-radius: 0.76rem;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(13px);
     transition: all 1.5s ease-in-out;
    }
   
   .audio-player-card.visible {
-    backdrop-filter: blur(5px);
+    backdrop-filter: hue-rotate(210deg);
     bottom: 16%;
     opacity: 1;
     visibility: visible;
     transition: all 0.75s ease-in-out;
+    color: var(--aaa);
   }
   
   .audio-toggle-container {
@@ -45,7 +53,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.3;
   }
   
   .audio-toggle-button {
@@ -84,7 +91,7 @@
     background-color: var(--background);
     border: var(--text) solid 1px;
     border-radius: 50px;
-    background-image: linear-gradient(to right, var(--secondary), var(--accent));
+    background-image: linear-gradient(to right, var(--text), var(--background));
     background-repeat: no-repeat;
   }
   
