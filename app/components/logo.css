@@ -1,0 +1,10 @@
+.logo-container {
+    position: abosolute;
+    top: 3rem;
+    left: 3rem;
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+}
+
+
