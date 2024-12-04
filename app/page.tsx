@@ -4,9 +4,6 @@ import { AudioProvider } from "./contexts/AudioProvider";
 import AudioPlayer from "./components/audio-player/AudioPlayer";
 import Header from "./components/Header";
 
-import "./colors.css";
-import "./home.css";
-
 function Home() {
   return (
     <div className="home-page-container">

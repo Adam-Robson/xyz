@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { karla } from '@/fonts/fonts';
-import "./colors.css"
+
 import "./globals.css";
+import "./colors.css";
+import "./home.css";
 
 export const metadata: Metadata = {
   title: "Le FOG",

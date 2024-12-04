@@ -21,6 +21,10 @@ header {
     width: 100%;
     margin: 0 auto;
   }
+
+  .home-logo-container {
+    max-width: 150px;
+  }
   
   .title-container {
     position: absolute;

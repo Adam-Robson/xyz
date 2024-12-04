@@ -8,6 +8,7 @@
 }
 
 .navlinks {
+  margin-top: 0.5rem;
   padding: 0.25rem;
   width: 100%;
   display: flex;
@@ -16,11 +17,17 @@
 }
 
 .navlink {
-  /* font-size: 1.37rem; */
   font-size: 0.98rem;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
   animation: smoothColorCycle 13s ease-in-out infinite, opacityCycle 8s ease-in-out infinite;
+}
+
+@media (min-width: 568px) {
+  .navlink {
+    font-size: 1.37rem;
+  }
 }
 
 button:hover,
@@ -32,11 +39,11 @@ button:hover,
 
 @keyframes smoothColorCycle {
     0%,100% {
-      color: var(--eee);
+      color: var(--jet);
       filter: brightness(0.9);
     }
     50% {
-      color: var(--ccc);
+      color: var(--cadet);
       filter: brightness(1.0);
     }
   }

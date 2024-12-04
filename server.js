@@ -3,8 +3,8 @@ import { parse } from 'node:url';
 import next from 'next';
 
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = 'lefog.xyz';
-const port = 3000;
+const hostname = process.env.hostname ?? 'lefog.xyz'
+const port = process.env.port ?? 3000;
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 

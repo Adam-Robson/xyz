@@ -1,35 +1,21 @@
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --background: hsla(0, 0%, 15%, 1); /* raisin */
-    --text: hsla(47, 23%, 88%, 1); /* alabaster */
-    --primary: hsla(50, 37%, 69%, 1); /* sage */
-    --secondary: hsla(33, 100%, 37%, 1); /* tigers-eye */
-    --accent: hsla(2, 24%, 28%, 1); /* rose-ebony */
-    --aaa: hsla(210, 14%, 89%, 1); /* platinum */
-    --bbb: hsla(210, 17%, 98%, 1); /* seasalt */
-    --ccc: hsla(210, 11%, 71%, 1); /* french-gray-2 */
-    --ddd: hsla(210, 9%, 31%, 1); /* outer-space */
-    --eee: hsla(210, 10%, 23%, 1); /* onyx */
-    --fff: hsla(210, 11%, 15%, 1); /* eerie-black */
-    --gdt-r: linear-gradient(90deg, var(--fff), var(--eee), var(--ddd), var(--ccc), var(--aaa));
-    --gdt-t: linear-gradient(0deg, var(--fff), var(--eee), var(--ddd), var(--ccc), var(--aaa));
-  }
+:root {
+  --text: #01161eff; /* raisin */
+  --background: #f9fafbff; /* seasalt */
+  --primary: #857e61ff; /* reseda-green */
+  --secondary: #e6ebe0ff; /* alabaster */
+  --accent: #8d818cff; /* taupe-gray */
+  --jet: #2a2b2eff; /* cad--cadet-gray */
+  --alice: #e5ecf4ff; /* alice */
+  --cadet: #819595ff;
+  --ash: #b1b6a6ff;
+
+  --gr-90: linear-gradient(90deg, var(--background), var(--alice), var(--secondary), var(--ash-gray), var(--cadet-gray));
+  --gr-00: linear-gradient(0deg, var(--background), var(--alice), var(--secondary), var(--ash-gray), var(--cadet-gray));
 }
 
-@media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
-    --text: hsla(0, 0%, 15%, 1); /* raisin */
-    --background: hsla(47, 23%, 88%, 1); /* alabaster */
-    --accent: hsla(50, 37%, 69%, 1); /* sage */
-    --secondary: hsla(33, 100%, 37%, 1); /* tigers-eye */
-    --primary: hsla(2, 24%, 28%, 1); /* rose-ebony */
-    --fff: hsla(210, 14%, 89%, 1); /* platinum */
-    --eee: hsla(210, 17%, 98%, 1); /* seasalt */
-    --ddd: hsla(210, 11%, 71%, 1); /* french-gray-2 */
-    --ccc: hsla(210, 9%, 31%, 1); /* outer-space */
-    --bbb: hsla(210, 10%, 23%, 1); /* onyx */
-    --aaa: hsla(210, 11%, 15%, 1); /* eerie-black */
-    --gdt-r: linear-gradient(90deg, var(--fff), var(--eee), var(--ddd), var(--ccc), var(--aaa));
-    --gdt-t: linear-gradient(0deg, var(--fff), var(--eee), var(--ddd), var(--ccc), var(--aaa));
+    --text: #f9fafbff; /* seasalt */
+    --background: #01161eff; /* raisin */
   }
 }
