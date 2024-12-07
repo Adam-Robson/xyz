@@ -41,4 +41,14 @@ export interface IToggleAudioPlayerProps {
   setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+
+export interface BackgroundProps {
+  height: number;
+  width: number;
+  src: string;
+  alt: string;
+  overlay?: string;
+  children?: React.ReactNode;
+}
+
   
