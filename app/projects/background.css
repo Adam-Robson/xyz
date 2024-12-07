@@ -1,0 +1,16 @@
+.background-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 100dvw;
+    height: calc(10vmin * 2rem);
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat-x;
+    opacity: 1;
+    
+
+}

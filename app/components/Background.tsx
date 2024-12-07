@@ -1,14 +1,8 @@
+import { Suspense } from 'react';
+import { BackgroundProps } from '../types';
+import Loading from '../loading';
 import Image from 'next/image';
 import "./background.css";
-
-export interface BackgroundProps {
-    height: number;
-    width: number;
-    src: string;
-    alt: string;
-    overlay?: string;
-    children?: React.ReactNode;
-}
 
 export default function Background({ 
   src, 
@@ -20,6 +14,7 @@ export default function Background({
 }: BackgroundProps
 ) {
     return (
+      <Suspense fallback={<Loading />}>
         <div className="background-container">
           <Image 
             src={src} 
@@ -31,5 +26,6 @@ export default function Background({
             <div className="background-content">{children}</div>
           </div>
         </div>
+      </Suspense>
     )
 }

@@ -2,20 +2,27 @@
   --text: #01161eff; /* raisin */
   --background: #f9fafbff; /* seasalt */
   --primary: #857e61ff; /* reseda-green */
-  --secondary: #e6ebe0ff; /* alabaster */
+  --secondary: #819595ff; /* alabaster */
   --accent: #8d818cff; /* taupe-gray */
-  --jet: #2a2b2eff; /* cad--cadet-gray */
-  --alice: #e5ecf4ff; /* alice */
-  --cadet: #819595ff;
-  --ash: #b1b6a6ff;
+  --complement: #2a2b2eff; /* cad--cadet-gray */
+  --highlight: #e5ecf4ff; /* alice */
+  --dust: #e6ebe0ff;
+  --light: #b1b6a6ff;
 
-  --gr-90: linear-gradient(90deg, var(--background), var(--alice), var(--secondary), var(--ash-gray), var(--cadet-gray));
-  --gr-00: linear-gradient(0deg, var(--background), var(--alice), var(--secondary), var(--ash-gray), var(--cadet-gray));
+  --aa: linear-gradient(90deg, var(--alice), var(--secondary), var(--accent), var(--dust), var(--light));
+  --ab: linear-gradient(0deg, var(--background), var(--alice), var(--secondary), var(--dust), var(--light));
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --text: #f9fafbff; /* seasalt */
     --background: #01161eff; /* raisin */
+    --text: #f9fafbff; /* seasalt */
+    --primary:  #b1b6a6ff;/* reseda-green */
+    --secondary: #e6ebe0ff; /* alabaster */
+    --accent: #8d818cff; /* taupe-gray */
+    --complement: #e5ecf4ff; /* cadet */
+    --highlight: #2a2b2eff; /* alice */
+    --light: #819595ff;
+    --dust: #857e61ff
   }
 }

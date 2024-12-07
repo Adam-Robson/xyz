@@ -1,10 +1,18 @@
 import Image from "next/image";
 import "./logo.css";
 
-export default function Logo() {
+interface LogoProps {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    c: string;
+}
+
+export default function Logo({src, alt, width, height, c}: LogoProps) {
     return (
     <div className="logo-container">
-        <Image src="/bow.webp" alt="le fog logo" width={400} height={400} className="logo"/>
+        <Image src={src} alt={alt} width={width} height={height} className={c} />
     </div>
     );
 }
