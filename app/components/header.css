@@ -48,6 +48,6 @@ header {
     text-decoration-thickness: 0.22rem;
     text-underline-offset: 0.46rem;
     text-align: center;
-    color: var(--text);
+    color: var(--background);
   }
   

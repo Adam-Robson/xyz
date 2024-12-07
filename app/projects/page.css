@@ -33,7 +33,10 @@
 }
 
 .projects-page-list ul {
+    padding-left: 2rem;
 }
 
 .projects-page-list-item {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
